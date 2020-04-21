@@ -1,0 +1,44 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #343a40;
+}
+
+.jumbotron {
+    background-image: url(img/jumbo_img.png);
+}
+
+a {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+.main {
+    padding: 20px 0;
+}
+
+.container {
+    padding: 50px 0;
+}
+
+#download {
+    background-color: #e9ecef;
+}
+
+.get_app {
+    width: 300px;
+    height: auto;
+    margin: 50px 20px;
+}
+
+.mail_list {
+    margin: 50px 200px 30px 200px;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+}

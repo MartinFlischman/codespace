@@ -14,54 +14,64 @@
 </head>
 
 <body>
-    <nav id="navbar-example2" class="navbar sticky-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <a class="navbar-brand" href="#">
             <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="CodeSpace logo">
             CodeSpace
         </a>
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#download">Download</a>
-            </li>
-        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto  align-items-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Download</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0"></div>
-
-    <header id="about">
-        <div class="jumbotron jumbotron-fluid text-center">
+    <header>
+        <div id="about" class="jumbotron jumbotron-fluid text-center shadow">
             <img src="img/logo_2.png" alt="CodeSpace logo">
             <h1 class="display-4">CodeSpace</h1>
             <p class="lead">&lt A social chat app made with code, by coders, for coders! /&gt</p>
             <br>
             <br>
             <p>Don't have an account?</p>
-            <div class="row justify-content-center align-items-center">
-                <form class="form-inline">
-                    <label class="sr-only" for="inlineFormInputGroupUsername2"></label>
-                    <div class="input-group mb-2 mr-sm-2">
-                        <input type="text" class="form-control" id="inlineFormInputGroupUsername2"
+            <form>
+                <div class="form-group form-inline">
+                    <label for="username"></label>
+                    <input type="text" class="form-control" id="username" aria-describedby="emailHelp"
                         placeholder="Username">
-                    </div>
-                    <label class="sr-only" for="inputPassword2"></label>
-                    <input type="password" class="form-control mb-2 mr-sm-2" id="inputPassword2" placeholder="Password">
-                    <button type="submit" class="btn btn-primary mb-2">Sign up</button>
-                </form>
-            </div>
+                    <label for="password"></label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                        Agree to terms and conditions
+                    </label>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Sign up</button>
+            </form>
         </div>
     </header>
 
-    <main id="features" class="main">
-        <h1 class="text-center">Features</h1>
-        <div class="container">
-            <div class="card-deck">
-                <div class="card text-center" style="width: 18rem;">
+    <main>
+        <div id="features" class="container">
+            <h1 class="text-center mb-5 mt-5">Features</h1>
+            <div class="card-deck text-center">
+                <div class="card shadow p-3 mb-5 bg-white rounded border-0">
                     <div class="card-body">
                         <img src="img/code_1.png" alt="">
                         <br>
@@ -69,11 +79,10 @@
                         <br>
                         <h5 class="card-title">Connect</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare
-                            enim
-                            sit.</p>
+                            enim sit.</p>
                     </div>
                 </div>
-                <div class="card text-center" style="width: 18rem;">
+                <div class="card shadow p-3 mb-5 bg-white rounded border-0">
                     <div class="card-body">
                         <img src="img/code_2.png" alt="">
                         <br>
@@ -81,11 +90,10 @@
                         <br>
                         <h5 class="card-title">Groups</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare
-                            enim
-                            sit.</p>
+                            enim sit.</p>
                     </div>
                 </div>
-                <div class="card text-center" style="width: 18rem;">
+                <div class="card shadow p-3 mb-5 bg-white rounded border-0">
                     <div class="card-body">
                         <img src="img/code_3.png" alt="">
                         <br>
@@ -93,11 +101,10 @@
                         <br>
                         <h5 class="card-title">Cloud Sync</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare
-                            enim
-                            sit.</p>
+                            enim sit.</p>
                     </div>
                 </div>
-                <div class="card text-center" style="width: 18rem;">
+                <div class="card shadow p-3 mb-5 bg-white rounded border-0">
                     <div class="card-body">
                         <img src="img/code_4.png" alt="">
                         <br>
@@ -105,37 +112,26 @@
                         <br>
                         <h5 class="card-title">Ideas</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare
-                            enim
-                            sit.</p>
+                            enim sit.</p>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
-    </main>
 
-    <div id="download">
-        <div class="container text-center">
-            <h1>Download</h1>
+        <div id="download" class="container">
+            <h1 class="text-center mb-5 mt-5">Download</h1>
             <div class="apps">
                 <a href="#"><img class="get_app" src="img/app_store.png" alt="Apple App store link"></a>
                 <a href="#"><img class="get_app" src="img/play_store.png" alt="Google Play store link"></a>
             </div>
+
             <div class="mail_list">
-                <p class="lead text-center">Want updates on the app's latest features, register for our mailing list:
+                <p class="lead text-center">Want the latest updates and news on app features, register now!
                 </p>
-                <div class="form-group input-group mb-2 mr-sm-2">
-                    <label for="exampleFormControlInput2"></label>
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">@</div>
-                    </div>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" aria-describedby="emailHelpId"
-                        placeholder="Email address">
-                </div>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Register</a>
             </div>
         </div>
-    </div>
-    </div>
+    </main>
 
     <footer class="footer text-center">
         <div class="container">

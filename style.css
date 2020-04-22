@@ -2,6 +2,7 @@ body {
     background-color: #ffffff;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color: #343a40;
+    position: relative;
 }
 
 .jumbotron {
@@ -9,8 +10,7 @@ body {
 }
 
 .header {
-    margin-top: -20px;
-    margin-bottom: 40px;
+    margin-top: 50px;
 }
 
 .create {
@@ -23,22 +23,26 @@ body {
     padding: 0;
 }
 
+.icons {
+    padding-bottom: 50px;
+}
+
 #features {
-    padding-bottom: 40px;
+    padding-top: 10px;
 }
 
 #download {
     background-color: #ecf0f1;
-    height: 550px;
-    padding-top: 10px;
+    padding: 80px 0 80px 0;
+    margin-top: 50px;
     text-align: center;
+    width: 100%;
 }
 
 #get_app {
-    width: 200px;
+    width: 250px;
     height: auto;
-    margin: 0 auto;
-    padding: 0 10px 20px 10px;
+    padding: 20px 5px;
 }
 
 .email {
@@ -47,5 +51,5 @@ body {
 }
 
 .mail_list {
-    margin-top: 40px;
+    padding-top: 40px;
 }

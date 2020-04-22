@@ -8,8 +8,44 @@ body {
     background-image: url(img/background.jpg);
 }
 
-.footer {
-    background-color: #343a40;
-    width: 100vw;
-    height: 100px;
+.header {
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+.create {
+    margin: 0 auto;
+    width:300px;
+}
+
+.account {
+    margin: 0;
+    padding: 0;
+}
+
+#features {
+    padding-bottom: 40px;
+}
+
+#download {
+    background-color: #ecf0f1;
+    height: 550px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#get_app {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 10px 20px 10px;
+}
+
+.email {
+    margin: 0 auto;
+    width: 350px;
+}
+
+.mail_list {
+    margin-top: 40px;
 }
